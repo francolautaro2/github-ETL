@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Spider github repositories
 
 ---
