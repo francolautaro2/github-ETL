@@ -8,7 +8,7 @@ This project is an API that gets data information about api repositories from gi
 
 #### Config
 
-* In your code
+* In your code, in processing file:
 
 ```go
 // change url and add your url of github api repos
