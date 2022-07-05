@@ -9,7 +9,7 @@ import (
 )
 
 func GetConnection() *gorm.DB {
-	Instance, err := gorm.Open(mysql.Open("root:admin@tcp(localhost:3306)/gitapi"), &gorm.Config{})
+	Instance, err := gorm.Open(mysql.Open("your user database and password here :)"), &gorm.Config{})
 	if err != nil {
 		log.Println(err)
 	}
