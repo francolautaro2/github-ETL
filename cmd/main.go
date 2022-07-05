@@ -2,8 +2,16 @@ package main
 
 import (
 	"repoInfo/pkg/processing"
+	"time"
 )
 
 func main() {
-	processing.Run()
+	uptimeTicker := time.NewTicker(10 * time.Minute)
+	for {
+		select {
+		case <-uptimeTicker.C:
+			processing.Run()
+		}
+	}
+
 }
